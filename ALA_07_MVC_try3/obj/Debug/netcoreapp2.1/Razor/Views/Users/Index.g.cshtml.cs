@@ -66,7 +66,7 @@ using ALA_07_MVC_try3.Models;
             WriteLiteral("\r\n<h2>Users</h2>\r\n\r\n<div class=\"card\" style=\"width: 50rem;\">\r\n    <p>\r\n        ");
             EndContext();
             BeginContext(171, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c82a53de75af48ddb3eac07051de7af8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "126dd5bd1ccc40eea98e4d80f9cd1c7a", async() => {
                 BeginContext(194, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -157,7 +157,7 @@ using ALA_07_MVC_try3.Models;
             WriteLiteral("\r\n                    </td>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(1190, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92aa521f664543a29528b6101a434b7a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b3f429e6871498895d47f11c4dfc77d", async() => {
                 BeginContext(1238, 27, true);
                 WriteLiteral("User Details and Award List");
                 EndContext();
@@ -192,7 +192,7 @@ using ALA_07_MVC_try3.Models;
             WriteLiteral(" |\r\n                    </td>\r\n                    <td>\r\n\r\n                        ");
             EndContext();
             BeginContext(1352, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c9d31a4a8814256b60be8066b2499f3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "218f7b66942c4acb82879a0b15bc2624", async() => {
                 BeginContext(1397, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -227,7 +227,7 @@ using ALA_07_MVC_try3.Models;
             WriteLiteral(" |\r\n                        ");
             EndContext();
             BeginContext(1433, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76316a4d313c422da7fe452230d296e4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ddb4ab4f02af4166bb6c17244b3bf1b0", async() => {
                 BeginContext(1480, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

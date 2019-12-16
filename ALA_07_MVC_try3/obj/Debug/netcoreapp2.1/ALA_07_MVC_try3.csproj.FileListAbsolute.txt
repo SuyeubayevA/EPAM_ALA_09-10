@@ -35,3 +35,4 @@ C:\Users\Admin\source\repos\ALA_07_MVC_try3\ALA_07_MVC_try3\obj\Debug\netcoreapp
 C:\Users\Admin\source\repos\ALA_07_MVC_try3\ALA_07_MVC_try3\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.g.cshtml.cs
 C:\Users\Admin\source\repos\ALA_07_MVC_try3\ALA_07_MVC_try3\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.g.cshtml.cs
 C:\Users\Admin\source\repos\ALA_07_MVC_try3\ALA_07_MVC_try3\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.g.cshtml.cs
+C:\Users\Admin\source\repos\ALA_07_MVC_try3\ALA_07_MVC_try3\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout2.g.cshtml.cs
