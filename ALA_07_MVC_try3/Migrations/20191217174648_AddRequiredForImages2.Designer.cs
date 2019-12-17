@@ -4,14 +4,16 @@ using ALA_07_MVC_try3.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ALA_07_MVC_try3.Migrations
 {
     [DbContext(typeof(UserContext))]
-    partial class UserContextModelSnapshot : ModelSnapshot
+    [Migration("20191217174648_AddRequiredForImages2")]
+    partial class AddRequiredForImages2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,6 +31,9 @@ namespace ALA_07_MVC_try3.Migrations
                         .HasMaxLength(250);
 
                     b.Property<int?>("MyUserId");
+
+                    b.Property<byte[]>("Photo")
+                        .IsRequired();
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -55,7 +60,8 @@ namespace ALA_07_MVC_try3.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<byte[]>("Photo");
+                    b.Property<byte[]>("Photo")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
