@@ -57,12 +57,13 @@ namespace ALA_07_MVC_try3
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Users}/{action=Index}/{id?}");
-            });
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Users}/{action=Index}/{id?}");
+            //});
+            app.UseMvc();
         }
     }
 }

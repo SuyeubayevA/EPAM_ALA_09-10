@@ -11,6 +11,7 @@ namespace ALA_07_MVC_try3.Models
         public List<Award> Awards { get; set; }
 
         public int UserID { get; set; }
+        public string UserName { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
     }

@@ -21,13 +21,17 @@ namespace ALA_07_MVC_try3.Controllers
         }
 
         // GET: Users
+        [Route("users")]
+        [Route("users/index")]
+        [Route("~/")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.User.ToListAsync());
         }
 
         // GET: Users/Details/5
-        public async Task<IActionResult> Details(int? id)
+        [Route("users/{id?}/{UserName?}")]
+        public async Task<IActionResult> Details( int? id)
         {
             if (id == null)
             {
@@ -48,7 +52,8 @@ namespace ALA_07_MVC_try3.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Details([Bind("UserID,Title,Description")] UserDetailsViewModel viewModel)
+        //[Route("Details")]
+        public async Task<IActionResult> Details([Bind("UserID,UserName,Title,Description")] UserDetailsViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
@@ -90,6 +95,7 @@ namespace ALA_07_MVC_try3.Controllers
         }
 
         // GET: Users/Create
+        [Route("create-user")]
         public IActionResult Create()
         {
             return View();
@@ -132,6 +138,7 @@ namespace ALA_07_MVC_try3.Controllers
         }
 
         // GET: Users/Edit/5
+        [Route("user/{id?}/edit")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -203,6 +210,7 @@ namespace ALA_07_MVC_try3.Controllers
         }
 
         // GET: Users/Delete/5
+        [Route("user/{id?}/delete")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
