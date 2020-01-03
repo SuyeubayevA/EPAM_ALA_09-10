@@ -23,10 +23,5 @@ namespace ALA_07_MVC_try3.Models
 
         [Range(0, 150)]
         public int Age { get; set; }
-
-        [DataType(DataType.Upload)]
-        //[MaxFileSize(5 * 1024 * 1024)]
-        //[AllowedExtensions(new string[] { ".jpg", ".png" })]
-        public byte[] Photo { get; set; }
     }
 }

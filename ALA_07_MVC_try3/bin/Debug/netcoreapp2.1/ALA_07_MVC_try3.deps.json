@@ -29,7 +29,8 @@
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.14",
           "Microsoft.EntityFrameworkCore.Tools": "2.1.14",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
+          "System.Diagnostics.Debug": "4.3.0"
         },
         "runtime": {
           "ALA_07_MVC_try3.dll": {}

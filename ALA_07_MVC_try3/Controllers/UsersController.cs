@@ -21,9 +21,9 @@ namespace ALA_07_MVC_try3.Controllers
         }
 
         // GET: Users
+        //[Route("~/")]
         [Route("users")]
         [Route("users/index")]
-        [Route("~/")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.User.ToListAsync());
@@ -31,7 +31,7 @@ namespace ALA_07_MVC_try3.Controllers
 
         // GET: Users/Details/5
         [Route("users/{id?}/{UserName?}")]
-        public async Task<IActionResult> Details( int? id)
+        public async Task<IActionResult> Details(string Name, int? id)
         {
             if (id == null)
             {
@@ -106,30 +106,10 @@ namespace ALA_07_MVC_try3.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Birthday,Age,Photo")] User user, IFormFile Image)
+        public async Task<IActionResult> Create([Bind("Id,Name,Birthday,Age")] User user)
         {
             if (ModelState.IsValid)
             {
-                //if (Image != null)
-
-                //{
-                //    if (Image.Length > 0)
-
-                //    //Convert Image to byte and save to database
-
-                //    {
-
-                //        byte[] p1 = null;
-                //        using (var fs1 = Image.OpenReadStream())
-                //        using (var ms1 = new MemoryStream())
-                //        {
-                //            fs1.CopyTo(ms1);
-                //            p1 = ms1.ToArray();
-                //        }
-                //        user.Photo = p1;
-
-                //    }
-                //}
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -159,7 +139,7 @@ namespace ALA_07_MVC_try3.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Birthday,Age,Photo")] User user, IFormFile Image)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Birthday,Age")] User user)
         {
             if (id != user.Id)
             {
@@ -170,26 +150,6 @@ namespace ALA_07_MVC_try3.Controllers
             {
                 try
                 {
-                    //if (Image != null)
-
-                    //{
-                    //    if (Image.Length > 0)
-
-                    //    //Convert Image to byte and save to database
-
-                    //    {
-
-                    //        byte[] p1 = null;
-                    //        using (var fs1 = Image.OpenReadStream())
-                    //        using (var ms1 = new MemoryStream())
-                    //        {
-                    //            fs1.CopyTo(ms1);
-                    //            p1 = ms1.ToArray();
-                    //        }
-                    //        user.Photo = p1;
-
-                    //    }
-                    //}
                     _context.Update(user);
                     await _context.SaveChangesAsync();
                 }
